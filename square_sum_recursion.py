@@ -29,6 +29,7 @@ def squareSum(i):
 
 def check(confirmed):
     if len(confirmed):
+        active[0] = False
         print(confirmed[0])
         print(str(timer() - start), "sec runtime")
         active[0] = False

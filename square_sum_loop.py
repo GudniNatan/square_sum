@@ -44,9 +44,9 @@ def squareSum(startNum):
 
 def check(confirmed):
     if len(confirmed):
+        active[0] = False
         print(confirmed[0])
         print(str(timer() - start), "sec runtime")
-        active[0] = False
         for t in threading.enumerate():
             if t is not threading.currentThread():
                 t.join()
