@@ -52,4 +52,6 @@ while len(threading.enumerate()) > 1:
 
 if len(confirmed) == 0:
     print("No solution was found")
+else:
+    print("Found %d solutions" % len(confirmed))
 print(str(timer() - start), "sec runtime")
