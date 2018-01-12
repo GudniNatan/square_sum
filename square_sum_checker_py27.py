@@ -9,13 +9,12 @@ last = None
 for n in arr:
     if last is not None:
         if (n+last) ** 0.5 % 1 != 0:
-            print("FAIL, Values do not add up to square number")
+            print("FAIL, Values %d and %d do not add up to a square number" % (last, n))
             break
     try:
         numbers.remove(n)
     except KeyError:
-        print(n)
-        print("FAIL, Incorrect number of values")
+        print("FAIL, Incorrect number of values. Either one appears twice or one is missing.")
         break
     last = n
 else:
