@@ -52,5 +52,6 @@ while len(threading.enumerate()) > 1:
 if len(confirmed) == 0:
     print("No solution was found")
 else:
-    print("Found %d solutions" % len(list(set(map(tuple, confirmed)))))
+    c = len(list(set(map(tuple, confirmed))))
+    print("Found %d solutions. That's %d excluding mirror duplicates." % (c, c / 2))
 print(str(timer() - start), "sec runtime")
