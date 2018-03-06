@@ -12,4 +12,4 @@ The non-recursive version will be slower, but MAYBE more reliable. The non-recur
 1. Download and install Python 3 to your computer from https://www.python.org/ (Python 2 is ok too).
 2. Download 'square_sum_recursion.py' and open it with the IDLE editor via right click menu. 
 3. Run it by pressing F5
-4. Pick any number
+4. Enter any number
